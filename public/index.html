@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Home page</title>
+  </head>
+  <body class="bg-[#2e3b5b] text-gray-200">
+    <main class="max-w-5xl mx-auto mt-16">
+      <!-- <a href="/about">About</a> -->
+      <h1 class="text-4xl font-bold">Movies</h1>
+      <div class="mt-8 grid grid-cols-3 gap-8">
+        <article>
+          <img
+            src="images/diddy.avif"
+            alt=""
+            class="w-full h-64 object-cover"
+          />
+          <div class="flex items-center justify-between mt-4">
+            <h2 class="text-xl">Diddy</h2>
+            <p
+              class="bg-orange-500 text-black p-4 w-10 h-10 grid place-content-center rounded-full"
+            >
+              10
+            </p>
+          </div>
+          <p class="text-gray-400">Horror</p>
+        </article>
+        <article>
+          <img src="images/hotd.avif" alt="" class="w-full h-64 object-cover" />
+          <div class="flex items-center justify-between mt-4">
+            <h2 class="text-xl">House of the dragon</h2>
+            <p
+              class="bg-orange-500 text-black p-4 w-10 h-10 grid place-content-center rounded-full"
+            >
+              10
+            </p>
+          </div>
+          <p class="text-gray-400">Action</p>
+        </article>
+        <article>
+          <img
+            src="images/rkelly.webp"
+            alt=""
+            class="w-full h-64 object-cover"
+          />
+          <div class="flex items-center justify-between mt-4">
+            <h2 class="text-xl">Surviving R Kelly</h2>
+            <p
+              class="bg-orange-500 text-black p-4 w-10 h-10 grid place-content-center rounded-full"
+            >
+              7
+            </p>
+          </div>
+          <p class="text-gray-400">Thriller</p>
+        </article>
+      </div>
+      <button
+        type="button"
+        class="bg-orange-500 hover:bg-orange-300 transition-colors ease-in-out duration-300 px-6 py-3 rounded-lg mt-8 text-black"
+      >
+        Get movies
+      </button>
+    </main>
+  </body>
+</html>
