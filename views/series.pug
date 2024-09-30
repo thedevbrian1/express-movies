@@ -1,0 +1,18 @@
+doctype html 
+html 
+    head 
+        link(rel="stylesheet", href="/output.css")
+        title Series 
+    body(class="bg-[#2e3b5b] text-gray-200") 
+        main(class="max-w-5xl mx-auto mt-16")
+            h1(class="text-4xl font-bold") Series
+            ul(class="mt-8 grid grid-cols-3 gap-8") 
+                each val in data
+                    li
+                        article
+                            img(src=val.poster, alt=val.title, class="w-full h-64 object-cover")
+                            div(class="flex items-center justify-between mt-4")
+                                a(href=`/series/${val.id}`)
+                                    h2(class="text-xl")= val.title
+                                p(class="bg-orange-500 text-black p-4 w-10 h-10 grid place-content-center rounded-full")= val.rating
+                            p(class="text-gray-400")= val.genre
