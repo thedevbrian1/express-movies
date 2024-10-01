@@ -1,0 +1,19 @@
+doctype html 
+html 
+    head 
+        title= title 
+        link(rel="stylesheet", href="/output.css")
+    body(class="bg-[#2e3b5b] text-gray-200")
+        nav
+            a(href="/", class="w-20")
+                img(src="/images/movie.svg")
+            ul
+                li
+                    a(href="/") Home
+                li
+                    a(href="/movies") Movies
+                li
+                    a(href="/series") Series
+        block content
+        footer 
+            p Copyright &copy; #{new Date().getFullYear()}
